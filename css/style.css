@@ -42,9 +42,21 @@ Header
 **********************
  */
 
+ 
+ /* ***********
+ Prova ad inserire l'Header in posizione fissa in modo che il resto
+ del sito durante lo scroll passi sotto all'header stesso.
+ Usato Position FIXED + il posizionamento top/bottom/left/right */
+
  header{
     background-color: #ff6900;
- }
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+}
+
+/* ************* */
 
  header .header_container{
     display: flex;
@@ -86,7 +98,7 @@ Main
  */
 
  .main_container{
-    padding:50px 20px 0 0;
+    padding: 100px 20px 0 0;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
