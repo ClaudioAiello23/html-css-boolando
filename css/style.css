@@ -46,7 +46,9 @@ Header
  /* ***********
  Prova ad inserire l'Header in posizione fissa in modo che il resto
  del sito durante lo scroll passi sotto all'header stesso.
- Usato Position FIXED + il posizionamento top/bottom/left/right */
+ Usato Position FIXED + il posizionamento top/bottom/left/right +
+ la proprietà z-index per fare in modo che nulla passi sopra
+ all'header durante lo scorrimento pagina. */
 
  header{
     background-color: #ff6900;
@@ -54,6 +56,7 @@ Header
     left: 0;
     right: 0;
     top:0;
+    z-index: 999;
 }
 
 /* ************* */
@@ -111,6 +114,39 @@ Main
 .main_container img{
     width: 380px;
 }
+
+.image{
+    position: relative;
+}
+
+/* .sconto{
+    position: absolute;
+    bottom: 125px;
+    width: 40px;
+    height: 20px;
+    background-color: #FF009c;
+    color: white;
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.etichetta{
+    position: absolute;
+    bottom: 125px;
+    left: 45px;
+    width: 80px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    list-style: none;
+    bottom: 125px;
+    left: 45px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 2px;
+} */
 
 .price{
     padding-bottom: 40px;
