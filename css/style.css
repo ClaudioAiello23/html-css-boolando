@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 
+**********************
+Setup
+**********************
+ */
+
+ header{
+    height: 60px;
+ }
+
+
+ /* 
+**********************
+Header
+**********************
+ */
+
+ header{
+    background-color: #ff6900;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+.h_age nav a{
+    color:white;
+    text-decoration: none;
+    padding: 3px;
+    vertical-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+.h_age{
+    font-size: 14px;
+}
+
+.h_logo img{
+    width: 100px;
+    height:auto;
+}
