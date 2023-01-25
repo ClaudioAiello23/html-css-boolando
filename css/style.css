@@ -10,9 +10,14 @@ Setup
 **********************
  */
 
- header{
+ .setup .header_container{
     height: 60px;
  }
+
+ /* .setup .main_container{
+    background-color: yellow;
+    height: 800px;
+ } */
 
 
  /* 
@@ -23,9 +28,14 @@ Header
 
  header{
     background-color: #ff6900;
+ }
+
+ header .header_container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
  }
 
 .h_age nav a{
@@ -35,7 +45,7 @@ Header
     vertical-align: center;
 }
 
-header nav ul li{
+.header_container nav ul li{
     display: inline-block;
 }
 
@@ -47,3 +57,59 @@ header nav ul li{
     width: 100px;
     height:auto;
 }
+
+
+ /* 
+**********************
+Main
+**********************
+ */
+
+ .main_container{
+    padding:50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ }
+
+
+.main_container img{
+    width: 380px;
+}
+
+.price{
+    padding-bottom: 40px;
+}
+
+.brand, .price {
+    font-size: 14px;
+}
+
+.wear{
+    font-weight: bold;
+}
+
+
+/* Prova selettore avanzato ":NOT()"
+Tutto ciò che è di classe "full" è "nero" 
+e non è "grassetto"; tutto quello che ha classe
+"price" ma non "full" è "rosso" e "grassetto" */
+
+.full{
+    color: black;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.price:not(.full){
+    color: red;
+    font-weight: bold;
+}
+/* Fine prova selettore avanzato ":NOT()"
+
+
+
+
