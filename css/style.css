@@ -46,16 +46,21 @@ Header
  /* ***********
  Prova ad inserire l'Header in posizione fissa in modo che il resto
  del sito durante lo scroll passi sotto all'header stesso.
- Usato Position FIXED + il posizionamento top/bottom/left/right +
- la proprietà z-index per fare in modo che nulla passi sopra
- all'header durante lo scorrimento pagina. */
+ Usato Position FIXED + il posizionamento top/bottom/left/right
+ (o in alternativa width:100%) + la proprietà z-index 
+ per fare in modo che nulla passi sopra all'header durante 
+ lo scorrimento pagina. */
 
  header{
     background-color: #ff6900;
     position: fixed;
+    width: 100%;
+    /* 
+    alternativa a width:100% puoi usare
     left: 0;
     right: 0;
-    top:0;
+    top:0; 
+    */
     z-index: 999;
 }
 
@@ -203,10 +208,9 @@ questo si colora di rosso. (regola HOVER) */
     padding: 10px;
     width: 40px;
     height: 40px;
-    z-index: 1;
 }
 
-.image:hover .heart{
+.favourite:hover .heart{
     color:red;
 }
 
