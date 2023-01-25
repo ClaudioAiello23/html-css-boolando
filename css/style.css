@@ -115,9 +115,43 @@ Main
     width: 380px;
 }
 
+/* 
+*****************************
+regola per togliere il bordino fastidioso che può apparire
+in automatico dopo l'inserimento di una immagine */
+
+main img{
+    display:block;
+}
+/* ******************************* */
+
+
+
+/* 
+************************************
+SOVRAPPOSIZIONE SECONDA IMMAGINE che cambia con il passaggio
+del mouse */
+
 .image{
     position: relative;
 }
+
+.secondary_image{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;  /* rendo invisibile l'immagine secondaria che sta sotto la primaria */
+}
+
+.box_image:hover .secondary_image{
+    opacity: 1; /* rendo visibile l'immagine secondaria quando passo col mouse sopra */
+}
+
+/* ************************************ */
+
+
 
 .sconto{
     position: absolute;
