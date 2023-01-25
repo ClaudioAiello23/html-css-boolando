@@ -176,6 +176,10 @@ footer .info_general a {
     list-style: none;
 }
 
+.look_for{
+    padding-bottom: 10px;
+}
+
 footer .social a {
     color: black;
     text-decoration: none;
