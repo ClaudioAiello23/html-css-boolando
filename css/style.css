@@ -126,7 +126,6 @@ main img{
 /* ******************************* */
 
 
-
 /* 
 ************************************
 SOVRAPPOSIZIONE SECONDA IMMAGINE che cambia con il passaggio
@@ -150,8 +149,6 @@ del mouse */
 }
 
 /* ************************************ */
-
-
 
 .sconto{
     position: absolute;
@@ -193,6 +190,28 @@ del mouse */
     padding-top: 2px;
 } 
 
+
+/* 
+*******************************
+Impostazione: Quando passo con il mouse sopra l'icona del cuore,
+questo si colora di rosso. (regola HOVER) */
+.heart{
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.image:hover .heart{
+    color:red;
+}
+
+/* ********************************* */
+
 .price{
     padding-bottom: 40px;
 }
@@ -206,7 +225,9 @@ del mouse */
 }
 
 
-/* Prova selettore avanzato ":NOT()"
+/* 
+********************
+Prova selettore avanzato ":NOT()"
 Tutto ciò che è di classe "full" è "nero" 
 e non è "grassetto"; tutto quello che ha classe
 "price" ma non "full" è "rosso" e "grassetto" */
@@ -222,6 +243,7 @@ e non è "grassetto"; tutto quello che ha classe
     font-weight: bold;
 }
 /* Fine prova selettore avanzato ":NOT()"
+
 
 
  /* 
