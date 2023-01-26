@@ -198,8 +198,10 @@ del mouse */
 
 /* 
 *******************************
-Impostazione: Quando passo con il mouse sopra l'icona del cuore,
-questo si colora di rosso. (regola HOVER) */
+Impostazione: Quando clicco con il mouse sopra l'icona del cuore,
+questo si colora di rosso. (regola :active); C'è altra regola che
+si può usare, senza cliccare ma semplicemente passando sopra con il 
+mouse, il cuore si colora di rosso (al posto di :active usa :hover) */
 .heart{
     background-color: white;
     position: absolute;
@@ -210,7 +212,7 @@ questo si colora di rosso. (regola HOVER) */
     height: 40px;
 }
 
-.favourite:hover .heart{
+.favourite:active .heart{
     color:red;
 }
 
